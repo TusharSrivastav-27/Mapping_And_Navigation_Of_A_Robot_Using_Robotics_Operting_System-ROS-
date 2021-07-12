@@ -1,0 +1,30 @@
+<launch>
+
+    <!--Including python file-->
+    <node pkg="ebot_navigation" type="my_move_file.py" name="my_move_file" output="screen"/>
+    <!-- including launch file for localization using AMCL -->
+    <include file="$(find ebot_navigation)/launch/amcl.launch" />
+     <!-- including launch file for visualizing in rviz -->
+    <include file="$(find ebot_description)/launch/ebot_visualize.launch"/>
+    
+
+   
+
+      <!-- Move base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/> 
+    <rosparam file="$(find ebot_navigation)/config/common_costmap.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find ebot_navigation)/config/common_costmap.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find ebot_navigation)/config/local_costmap.yaml" command="load" />
+    <rosparam file="$(find ebot_navigation)/config/global_costmap.yaml" command="load" />
+  <!--  <rosparam file="$(find ebot_navigation)/config/move_base_1.yaml" command="load" /> -->
+    <rosparam file="$(find ebot_navigation)/config/dwa_local_planner.yaml" command="load" />
+
+
+    <param name="move_base/DWAPlannerROS/yaw_goal_tolerance" value="1.0"/> 
+    <param name="move_base/DWAPlannerROS/xy_goal_tolerance" value="1.0"/> 
+  </node>
+
+</launch>
+
+
