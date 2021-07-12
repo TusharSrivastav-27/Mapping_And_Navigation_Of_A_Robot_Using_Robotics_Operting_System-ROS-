@@ -20,4 +20,5 @@ These are images from project:-
 
 3)Left Side is the environment that is seen by the robot and right side is the actual environment in which robot is moving.
 
-/home/tushar/Pictures/Screenshot from 2021-07-12 23-09-47.png
+![Screenshot from 2021-07-12 23-09-47](https://user-images.githubusercontent.com/71928146/125332493-b9e69d80-e366-11eb-9b25-f4f65cfb1ac1.png)
+
