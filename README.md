@@ -14,11 +14,11 @@ These are images from project:-
 
 ![image](https://user-images.githubusercontent.com/71928146/125330050-e0570980-e363-11eb-9a73-acf286f4f0ad.png)
 
-2)Mapped image of office created by robot
+2)2d Mapped image of office created by robot
 
 ![image](https://user-images.githubusercontent.com/71928146/125330384-52c7e980-e364-11eb-8494-9bc4dec250e2.png)
 
-3)Left Side is the environment that is seen by the robot and right side is the actual environment in which robot is moving.
+3)Left Side is the environment that is seen by the robot(2d map) and right side is the actual environment in which robot is moving.
 
 ![Screenshot from 2021-07-12 23-09-47](https://user-images.githubusercontent.com/71928146/125332493-b9e69d80-e366-11eb-9b25-f4f65cfb1ac1.png)
 
